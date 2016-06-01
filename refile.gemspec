@@ -15,6 +15,8 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= 2.1.0"
 
   spec.add_dependency "rest-client", "~> 1.8"
-  spec.add_dependency "sinatra", ">= 1.4.5"
+  # FIXME this needs to be added when version > 1.4.7 of sinatra comes out
+  # sinatra > 1.4.7 requires rack version 2.0.0.rc1
+  spec.add_dependency "sinatra"
   spec.add_dependency "mime-types"
 end
